@@ -3,45 +3,161 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kaleem Kayani | Developer Profile</title>
+<title>Kaleem Kayani | Developer Portfolio</title>
 <style>
-:root{--bg:#0d1117;--panel:#0d1622;--border:#26384c;--text:#e6edf3;--muted:#9db0c7;--blue:#39b6ff;--green:#238636}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
-a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}
-.topbar{height:62px;background:#080e18;border-bottom:1px solid #263445;display:flex;align-items:center;gap:24px;padding:0 28px;white-space:nowrap;overflow:hidden}
-.mark{font-size:30px;font-weight:800;color:#fff}.search{border:1px solid #40546b;border-radius:7px;padding:8px 14px;color:#9fb0c4;min-width:220px;flex:0 1 310px;background:#0b1420}.nav{font-weight:600;font-size:14px;color:#e6edf3}
-.banner{min-height:270px;position:relative;display:flex;align-items:center;justify-content:center;text-align:center;padding:32px 22px;background:linear-gradient(90deg,rgba(5,17,31,.38),rgba(5,17,31,.25)),linear-gradient(135deg,#123b61,#1e6a9b 42%,#132c4c 70%,#081726);overflow:hidden}
-.banner:before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 20% 15%,#8cc9ee66,transparent 30%),radial-gradient(ellipse at 75% 20%,#5fa5d955,transparent 25%),linear-gradient(180deg,transparent,#06111b99)}
-.mountain{position:absolute;inset:0;opacity:.35;background:linear-gradient(150deg,transparent 30%,#071a2c 30.2%,transparent 54%),linear-gradient(25deg,transparent 45%,#0a253e 45.2%,transparent 70%)}
-.banner-inner{position:relative;z-index:1}.banner h1{font-size:clamp(34px,5vw,56px);font-style:italic;letter-spacing:1px;margin:0 0 5px}.banner .sub{letter-spacing:3px;font-size:clamp(12px,2vw,18px)}.banner .tag{margin-top:12px;color:#eaf5ff}
-.banner-side{position:absolute;right:5%;top:50%;transform:translateY(-50%);text-align:left;z-index:1;line-height:2.1}.banner-side span{display:block}
-.page{max-width:1420px;margin:auto;padding:0 28px 50px;display:grid;grid-template-columns:270px minmax(400px,1fr) 250px;gap:22px}
-.profile{margin-top:-52px;position:relative;z-index:2}.avatar{width:220px;height:220px;border-radius:50%;border:4px solid #58b7ff;background:radial-gradient(circle at 50% 25%,#8bc4e6,#355b7d 48%,#0a1b2b 49%,#07111d);display:flex;align-items:center;justify-content:center;font-size:65px;box-shadow:0 0 0 3px #0d1117}
-.profile h2{font-size:26px;margin:10px 0 0}.username{font-size:19px;color:var(--muted)}.bio{color:#d3deeb;margin:18px 0}.meta{margin:9px 0;color:#c4d2e2}.edit{width:100%;border:1px solid #47627e;background:#17283b;color:#e6edf3;padding:9px;border-radius:7px;margin:14px 0;font-weight:600}.counts{display:flex;justify-content:space-between;text-align:center;margin:12px 0 20px;color:var(--muted)}.counts b{display:block;color:#e6edf3;font-size:17px}.social{display:block;margin:10px 0;font-weight:600}
-.tabs{display:flex;gap:28px;border-bottom:1px solid var(--border);padding:24px 0 15px;white-space:nowrap;overflow:auto}.tabs span:first-child{border-bottom:3px solid var(--blue);padding-bottom:15px;margin-bottom:-18px;color:#fff}
-.section-title{font-size:17px;margin:23px 0 12px}.repo-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.repo{border:1px solid var(--border);border-radius:9px;padding:15px 16px;min-height:126px;background:linear-gradient(135deg,#0d1723,#0b121d)}.repo-title{font-weight:650;display:flex;align-items:center;gap:8px}.public{font-size:11px;border:1px solid #31455a;border-radius:20px;color:#a9bdd1;padding:1px 7px}.repo p{font-size:13px;color:var(--muted);min-height:38px;margin:8px 0}.repo-foot{font-size:12px;color:#b7c6d8;display:flex;gap:16px}.dot{display:inline-block;width:11px;height:11px;border-radius:50%;margin-right:5px;background:#3572a5}.activity{border:1px solid var(--border);border-radius:9px;padding:14px;margin:8px 0;color:#b6c8db;font-size:13px}
-.side-card{border:1px solid var(--border);border-radius:9px;padding:15px;margin:22px 0 14px;background:#0b131e}.side-card h3{margin:0 0 12px;font-size:16px}.lang{display:flex;justify-content:space-between;font-size:12px;margin:12px 0 5px}.bar{height:7px;background:#1d2c3e;border-radius:10px;overflow:hidden}.fill{height:100%;border-radius:10px;background:#2f81f7}.toprepo{display:flex;justify-content:space-between;gap:8px;margin:14px 0;font-size:13px}.quote{font-style:italic;color:#c7d5e5}.quote small{display:block;text-align:right;margin-top:14px;color:var(--muted)}
-.graph{display:grid;grid-template-columns:repeat(34,1fr);gap:4px;margin-top:12px}.cell{height:10px;border-radius:2px;background:#142435}.cell:nth-child(7n),.cell:nth-child(13n){background:#155b42}.cell:nth-child(11n),.cell:nth-child(17n){background:#238b57}.cell:nth-child(19n),.cell:nth-child(29n){background:#31b56c}
-@media(max-width:1050px){.page{grid-template-columns:230px minmax(0,1fr)}.right{display:none}.banner-side{display:none}.avatar{width:185px;height:185px}}
-@media(max-width:700px){.topbar{padding:0 14px;gap:12px}.nav{display:none}.search{min-width:0}.page{display:block;padding:0 16px 35px}.profile{margin-top:-35px}.avatar{width:140px;height:140px;font-size:45px}.repo-grid{grid-template-columns:1fr}.banner{min-height:220px}.banner h1{font-size:34px}.banner .sub{letter-spacing:1px}.tabs{gap:20px}.profile h2{font-size:23px}}
+:root{
+  --bg:#080f19;--panel:#0b1421;--panel2:#0d1929;--border:#22354c;
+  --text:#e6edf7;--muted:#9db0c8;--blue:#36b6ff;--blue2:#1687e8;
+  --green:#24c77a;--purple:#a970ff;--pink:#f34f9b;--orange:#ff6848;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(ellipse at 50% 0%,#102947 0%,var(--bg) 48%);color:var(--text);font:15px/1.55 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+a{color:var(--blue);text-decoration:none}a:hover{color:#8ad7ff;text-decoration:underline}
+.topbar{height:62px;background:#080d15;border-bottom:1px solid #26364a;display:flex;align-items:center;gap:24px;padding:0 28px;position:sticky;top:0;z-index:10}
+.github-mark{width:34px;height:34px;border-radius:50%;background:#eef5ff;color:#09111c;display:grid;place-items:center;font-size:21px;font-weight:900}
+.search{border:1px solid #34475f;border-radius:8px;color:#91a5bf;padding:8px 13px;min-width:230px;max-width:320px;flex:1}
+.topnav{display:flex;gap:22px;white-space:nowrap;font-weight:600;font-size:14px}.topnav a{color:#e6edf7}
+.topright{margin-left:auto;color:#c6d4e5;font-size:20px;display:flex;gap:18px;align-items:center}
+.banner{min-height:270px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;text-align:center;padding:42px 24px;background:linear-gradient(90deg,rgba(3,12,24,.55),rgba(6,25,48,.24),rgba(3,12,24,.7)),linear-gradient(180deg,transparent 40%,rgba(8,15,25,.7)),url('https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=2000&q=85') center 48%/cover}
+.banner:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(8,15,25,.65),transparent 65%);pointer-events:none}
+.banner-content{position:relative;z-index:1}
+.banner h1{font-size:clamp(36px,5vw,58px);font-weight:750;font-style:italic;letter-spacing:1px;margin:0 0 3px;text-shadow:0 2px 18px #071322}
+.tagline{letter-spacing:3px;font-size:clamp(12px,1.6vw,18px);font-weight:650}
+.banner-rule{width:250px;height:2px;background:#cdeaff;margin:13px auto;opacity:.8}
+.banner-sub{font-size:17px}
+.banner-note{position:absolute;z-index:2;left:6.5%;top:50%;transform:translateY(-50%) rotate(-7deg);font-family:"Segoe Print","Comic Sans MS",cursive;font-size:27px;line-height:1.05;text-align:center;color:#fff;text-shadow:0 2px 7px #0b1a2b}
+.banner-skills{position:absolute;right:5%;top:50%;transform:translateY(-50%);z-index:2;text-align:left;display:grid;gap:9px;font-size:14px}
+.banner-skills span:before{content:"✧";font-size:20px;margin-right:14px;color:#e7f5ff}
+.layout{max-width:1480px;margin:0 auto;padding:0 28px 55px;display:grid;grid-template-columns:270px minmax(0,1fr) 254px;gap:26px}
+.profile{margin-top:-45px;position:relative;z-index:3}
+.avatar{width:224px;height:224px;border-radius:50%;border:4px solid #46baff;box-shadow:0 0 0 4px rgba(5,14,24,.85);object-fit:cover;background:#15283b}
+.profile h2{font-size:28px;line-height:1.2;margin:12px 0 1px}
+.handle{color:var(--muted);font-size:19px;margin-bottom:19px}
+.bio-row{display:flex;gap:10px;align-items:flex-start;margin:10px 0;color:#c7d6e8;font-size:14px}
+.bio-row .ico{width:18px;flex:none;color:#a8c6e8}
+.bio{margin:15px 0;color:#c7d6e8}
+.edit{display:block;width:100%;margin:18px 0;padding:9px;border-radius:8px;border:1px solid #3c5877;background:linear-gradient(#1a2b41,#122033);color:#eaf4ff;text-align:center;font-weight:650}
+.stats{display:flex;justify-content:space-between;border-bottom:1px solid #1d2b3e;padding:9px 0 18px;text-align:center;color:var(--muted);font-size:12px}
+.stats strong{display:block;color:#eaf2fb;font-size:17px}
+.social{display:grid;gap:12px;margin-top:22px;font-weight:600}
+.tabs{display:flex;gap:8px;align-items:center;border-bottom:1px solid var(--border);margin-top:8px;overflow:auto}
+.tabs a{padding:17px 12px;color:#bfd0e3;white-space:nowrap;border-bottom:3px solid transparent}
+.tabs a.active{border-bottom-color:var(--blue);color:#f4f8ff}
+.section-title{font-size:17px;margin:22px 0 12px}
+.repo-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.repo{border:1px solid var(--border);border-radius:9px;padding:16px 17px;background:linear-gradient(145deg,rgba(13,25,41,.96),rgba(8,16,27,.9));min-height:133px;display:flex;flex-direction:column;transition:transform .2s,border-color .2s}
+.repo:hover{transform:translateY(-3px);border-color:#368cc8}
+.repo-title{font-weight:700;font-size:14px}
+.public{display:inline-block;font-size:11px;color:#a9bbd0;border:1px solid #2a405a;border-radius:20px;padding:0 7px;margin-left:7px;font-weight:500}
+.repo p{margin:8px 0 14px;color:#aebfd4;font-size:13px;line-height:1.45}
+.repo-meta{margin-top:auto;display:flex;gap:17px;color:#a8bdd6;font-size:12px;align-items:center}
+.dot{display:inline-block;width:11px;height:11px;border-radius:50%;margin-right:6px;background:var(--blue);vertical-align:-1px}
+.orange{background:var(--orange)}.purple{background:var(--purple)}.pink{background:var(--pink)}.yellow{background:#f4df54}.green{background:var(--green)}
+.activity{border:1px solid var(--border);border-radius:9px;padding:13px 16px;color:#aabdd4;font-size:13px;background:#0b1420}
+.heatmap{display:grid;grid-template-columns:repeat(35,minmax(5px,1fr));gap:4px;margin:12px 0}
+.heatmap i{height:10px;border-radius:2px;background:#13283a}
+.heatmap i:nth-child(7n),.heatmap i:nth-child(11n){background:#155e45}
+.heatmap i:nth-child(13n),.heatmap i:nth-child(17n){background:#16804e}
+.heatmap i:nth-child(19n),.heatmap i:nth-child(23n){background:#23bd68}
+.sidebox{border:1px solid var(--border);border-radius:9px;padding:15px;background:rgba(10,19,31,.9);margin-top:20px}
+.sidebox h3{font-size:16px;margin:0 0 15px}
+.lang{margin:13px 0;font-size:12px;color:#c7d5e6}
+.lang-head{display:flex;justify-content:space-between;margin-bottom:6px}
+.track{height:7px;border-radius:8px;background:#1c2b3e;overflow:hidden}.fill{height:100%;border-radius:8px;background:var(--blue)}
+.toprepo{display:flex;gap:9px;align-items:center;margin:13px 0;font-size:12px}
+.quote{font-style:italic;color:#c5d4e7;font-size:15px}
+.quote small{display:block;text-align:right;color:#91a9c5;margin-top:13px;font-style:normal}
+footer{max-width:1480px;margin:0 auto;padding:0 28px 32px;color:#70859f;font-size:12px;text-align:center}
+@media(max-width:1120px){.layout{grid-template-columns:240px minmax(0,1fr)}.rightcol{grid-column:2;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}.rightcol .sidebox{margin-top:0}.banner-skills{right:3%}.banner-note{left:3%}}
+@media(max-width:760px){.topbar{padding:0 14px;gap:12px}.topnav{display:none}.search{min-width:0}.topright{gap:10px}.banner{min-height:260px;padding:38px 18px}.banner-note,.banner-skills{display:none}.layout{display:flex;flex-direction:column;padding:0 16px 35px;gap:18px}.profile{margin-top:-40px}.avatar{width:145px;height:145px}.profile h2{font-size:25px}.maincol{min-width:0}.tabs{margin-top:0}.tabs a{padding:13px 9px;font-size:13px}.repo-grid{grid-template-columns:1fr}.rightcol{display:grid;grid-template-columns:1fr}.rightcol .sidebox{margin-top:0}.heatmap{gap:2px}.heatmap i{height:7px}footer{padding:0 16px 25px}}
 </style>
 </head>
 <body>
-<header class="topbar"><div class="mark">◉</div><div class="search">Search or jump to...</div><div class="nav">Pull requests</div><div class="nav">Issues</div><div class="nav">Codespaces</div><div class="nav">Marketplace</div><div class="nav">Explore</div><div style="margin-left:auto">♧　＋　◉</div></header>
-<section class="banner"><div class="mountain"></div><div class="banner-inner"><h1>Kaleem Kayani</h1><div class="sub">FULL STACK DEVELOPER&nbsp; | &nbsp;CS STUDENT</div><div class="tag">Turning Ideas into Reality</div></div><div class="banner-side"><span>〈/〉　Web Development</span><span>♧　 Networking</span><span>♢　Cyber Security</span><span>♙　AI &amp; Machine Learning</span><span>▣　Always Learning...</span></div></section>
-<main class="page">
-<aside class="profile"><div class="avatar">KK</div><h2>Kaleem Kayani</h2><div class="username">kaleemkayani</div><div class="bio"><div class="meta">♧　Computer Science Student</div><div class="meta">⌖　Kotli, Azad Jammu &amp; Kashmir, Pakistan</div><div class="meta">↗　<a href="https://kaleemkayani.github.io">kaleemkayani.github.io</a></div><p>Passionate about Web Development, Networking, Cyber Security and building useful projects. Always eager to learn new technologies and improve my skills.</p></div><button class="edit">Edit profile (mockup)</button><div class="counts"><div><b>0</b>followers</div><div><b>0</b>following</div><div><b>0</b>stars</div></div><a class="social" href="#">▣　Portfolio Website</a><a class="social" href="#">▣　LinkedIn</a><a class="social" href="#">▶　YouTube</a><a class="social" href="#">♥　Social links</a></aside>
-<section class="main"><nav class="tabs"><span>▦　Overview</span><span>▤　Repositories　12</span><span>▦　Projects</span><span>⬡　Packages</span><span>•••</span></nav><h3 class="section-title">Pinned repositories</h3><div class="repo-grid">
-<div class="repo"><div class="repo-title">▤　<a href="#">Portfolio-Website</a><span class="public">Public</span></div><p>My personal portfolio website (HTML, CSS, JavaScript).</p><div class="repo-foot"><span><i class="dot" style="background:#e34c26"></i>HTML</span><span>☆ 5</span><span>⑂ 1</span></div></div>
-<div class="repo"><div class="repo-title">▤　<a href="#">Student-Management-System</a><span class="public">Public</span></div><p>A simple Student Management System web app.</p><div class="repo-foot"><span><i class="dot" style="background:#3572a5"></i>Python</span><span>☆ 4</span><span>⑂ 2</span></div></div>
-<div class="repo"><div class="repo-title">▤　<a href="#">Bolt-CMS-Bookstore</a><span class="public">Public</span></div><p>Online Bookstore theme using Bolt CMS.</p><div class="repo-foot"><span><i class="dot" style="background:#6e40c9"></i>PHP</span><span>☆ 3</span><span>⑂ 1</span></div></div>
-<div class="repo"><div class="repo-title">▤　<a href="#">Deadlock-Detection-Simulator</a><span class="public">Public</span></div><p>Operating Systems project — deadlock detection simulator.</p><div class="repo-foot"><span><i class="dot" style="background:#f34b7d"></i>C++</span><span>☆ 2</span><span>⑂ 1</span></div></div>
-<div class="repo"><div class="repo-title">▤　<a href="#">Networking-Notes</a><span class="public">Public</span></div><p>Networking concepts, diagrams and learning notes.</p><div class="repo-foot"><span><i class="dot" style="background:#89929d"></i>Markdown</span><span>☆ 2</span><span>⑂ 1</span></div></div>
-<div class="repo"><div class="repo-title">▤　<a href="#">Python-Basics</a><span class="public">Public</span></div><p>Python practice programs and examples.</p><div class="repo-foot"><span><i class="dot" style="background:#3572a5"></i>Python</span><span>☆ 1</span><span>⑂ 1</span></div></div>
-</div><h3 class="section-title">Recent Activity</h3><div class="activity">▤　Created repository <a href="#">kaleemkayani/Portfolio-Website</a><br><span style="margin-left:26px">A sample activity item — replace with your real activity.</span></div><h3 class="section-title">Contribution activity</h3><div style="font-size:13px;color:var(--muted)">October 2026</div><div class="graph" id="graph"></div><div style="font-size:12px;color:var(--muted);margin-top:12px">Learn how we count contributions <span style="float:right">Last 12 months　⌄</span></div></section>
-<aside class="right"><div class="side-card"><h3>Languages</h3><div class="lang"><span>🟦 Python</span><span>42.3%</span></div><div class="bar"><div class="fill" style="width:42.3%"></div></div><div class="lang"><span>🟥 HTML</span><span>23.1%</span></div><div class="bar"><div class="fill" style="width:23.1%;background:#f34b29"></div></div><div class="lang"><span>🟪 CSS</span><span>18.5%</span></div><div class="bar"><div class="fill" style="width:18.5%;background:#8957e5"></div></div><div class="lang"><span>🩷 C++</span><span>8.7%</span></div><div class="bar"><div class="fill" style="width:8.7%;background:#f34b7d"></div></div><div class="lang"><span>🟨 JavaScript</span><span>4.2%</span></div><div class="bar"><div class="fill" style="width:4.2%;background:#f1e05a"></div></div><div class="lang"><span>⬜ Other</span><span>3.2%</span></div><div class="bar"><div class="fill" style="width:3.2%;background:#8b949e"></div></div></div><div class="side-card"><h3>Top repositories</h3><div class="toprepo"><a href="#">▤ Portfolio-Website</a> ☆ 5</div><div class="toprepo"><a href="#">▤ Student-Management-System</a> ☆ 4</div><div class="toprepo"><a href="#">▤ Bolt-CMS-Bookstore</a> ☆ 3</div><div class="toprepo"><a href="#">▤ Deadlock-Detection-Simulator</a> ☆ 2</div><div class="toprepo"><a href="#">▤ Networking-Notes</a> ☆ 2</div></div><div class="side-card quote">“If you want to go fast, go alone. If you want to go far, go together.”<small>— Anonymous</small></div></aside>
-</main>
+<header class="topbar">
+  <div class="github-mark">●</div>
+  <div class="search">Search or jump to... <span style="float:right;border:1px solid #34475f;border-radius:4px;padding:0 6px">/</span></div>
+  <nav class="topnav"><a href="#projects">Pull requests</a><a href="#activity">Issues</a><a href="#skills">Codespaces</a><a href="#projects">Marketplace</a><a href="#about">Explore</a></nav>
+  <div class="topright"><span>♧</span><span>＋</span><span>◉</span></div>
+</header>
+
+<section class="banner">
+  <div class="banner-note">Code<br>Build<br>Learn<br>Grow<br>____</div>
+  <div class="banner-content">
+    <h1>Kaleem Kayani</h1>
+    <div class="tagline">FULL STACK DEVELOPER&nbsp; | &nbsp;CS STUDENT</div>
+    <div class="banner-rule"></div>
+    <div class="banner-sub">Turning Ideas into Reality</div>
+  </div>
+  <div class="banner-skills">
+    <span>Web Development</span><span>Networking</span><span>Cyber Security</span><span>AI &amp; Machine Learning</span><span>Always Learning...</span>
+  </div>
+</section>
+
+<div class="layout">
+  <aside class="profile" id="about">
+    <img class="avatar" src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=600&q=85" alt="Mountain landscape profile placeholder">
+    <h2>Kaleem Kayani</h2>
+    <div class="handle">kaleemkayani</div>
+    <div class="bio-row"><span class="ico">♧</span><span>Computer Science Student</span></div>
+    <div class="bio-row"><span class="ico">⌖</span><span>Kotli, Azad Jammu &amp; Kashmir, Pakistan</span></div>
+    <div class="bio-row"><span class="ico">↗</span><a href="https://kaleemkayani.github.io">kaleemkayani.github.io</a></div>
+    <div class="bio-row"><span class="ico">✉</span><span>your-email@example.com</span></div>
+    <p class="bio">Passionate about Web Development, Networking, Cyber Security and building useful projects. Always eager to learn new technologies and improve my skills.</p>
+    <a class="edit" href="#contact">Contact Me</a>
+    <div class="stats"><div><strong>0</strong>followers</div><div><strong>0</strong>following</div><div><strong>0</strong>stars</div></div>
+    <div class="social">
+      <a href="#projects">▣ &nbsp; Portfolio Website</a>
+      <a href="#contact">▣ &nbsp; LinkedIn</a>
+      <a href="#contact">▶ &nbsp; YouTube</a>
+      <a href="#contact">♥ &nbsp; Twitter / X</a>
+    </div>
+  </aside>
+
+  <main class="maincol">
+    <nav class="tabs"><a class="active" href="#overview">▧ &nbsp; Overview</a><a href="#projects">▣ &nbsp; Repositories</a><a href="#projects">▦ &nbsp; Projects</a><a href="#skills">⬡ &nbsp; Packages</a><a href="#contact">•••</a></nav>
+    <section id="overview">
+      <h3 class="section-title" id="projects">Pinned repositories</h3>
+      <div class="repo-grid">
+        <article class="repo"><div><a class="repo-title" href="#contact">▣ &nbsp; Portfolio-Website</a><span class="public">Public</span></div><p>My personal portfolio website (HTML, CSS, JavaScript).</p><div class="repo-meta"><span><i class="dot orange"></i>HTML</span><span>☆ 5</span><span>⑂ 1</span></div></article>
+        <article class="repo"><div><a class="repo-title" href="#contact">▣ &nbsp; Student-Management-System</a><span class="public">Public</span></div><p>A simple Student Management System (Web App).</p><div class="repo-meta"><span><i class="dot"></i>Python</span><span>☆ 4</span><span>⑂ 2</span></div></article>
+        <article class="repo"><div><a class="repo-title" href="#contact">▣ &nbsp; Bolt-CMS-Bookstore</a><span class="public">Public</span></div><p>Online Bookstore theme using Bolt CMS.</p><div class="repo-meta"><span><i class="dot purple"></i>PHP</span><span>☆ 3</span><span>⑂ 1</span></div></article>
+        <article class="repo"><div><a class="repo-title" href="#contact">▣ &nbsp; Deadlock-Detection-Simulator</a><span class="public">Public</span></div><p>OS Project - Deadlock Detection Simulator (C++).</p><div class="repo-meta"><span><i class="dot pink"></i>C++</span><span>☆ 2</span><span>⑂ 1</span></div></article>
+        <article class="repo"><div><a class="repo-title" href="#contact">▣ &nbsp; Networking-Notes</a><span class="public">Public</span></div><p>Network concepts, diagrams and notes.</p><div class="repo-meta"><span><i class="dot"></i>Markdown</span><span>☆ 2</span><span>⑂ 1</span></div></article>
+        <article class="repo"><div><a class="repo-title" href="#contact">▣ &nbsp; Python-Basics</a><span class="public">Public</span></div><p>Python practice programs and examples.</p><div class="repo-meta"><span><i class="dot"></i>Python</span><span>☆ 1</span><span>⑂ 1</span></div></article>
+      </div>
+    </section>
+    <section id="activity">
+      <h3 class="section-title">Recent Activity</h3>
+      <div class="activity">▣ &nbsp; Created repository <a href="#projects">kaleemkayani/Portfolio-Website</a><br><span style="padding-left:28px">Recently</span></div>
+      <h3 class="section-title">Contribution activity</h3>
+      <div class="activity"><div style="display:flex;justify-content:space-between"><strong>Contribution overview</strong><span>Last 12 months⌄</span></div><div class="heatmap" aria-label="Decorative contribution activity chart"></div><small>Learn how GitHub counts contributions</small></div>
+    </section>
+  </main>
+
+  <aside class="rightcol" id="skills">
+    <div class="sidebox"><h3>Languages</h3>
+      <div class="lang"><div class="lang-head"><span><i class="dot"></i>Python</span><span>42.3%</span></div><div class="track"><div class="fill" style="width:42.3%"></div></div></div>
+      <div class="lang"><div class="lang-head"><span><i class="dot orange"></i>HTML</span><span>23.1%</span></div><div class="track"><div class="fill" style="width:23.1%;background:var(--orange)"></div></div></div>
+      <div class="lang"><div class="lang-head"><span><i class="dot purple"></i>CSS</span><span>18.5%</span></div><div class="track"><div class="fill" style="width:18.5%;background:var(--purple)"></div></div></div>
+      <div class="lang"><div class="lang-head"><span><i class="dot pink"></i>C++</span><span>8.7%</span></div><div class="track"><div class="fill" style="width:8.7%;background:var(--pink)"></div></div></div>
+      <div class="lang"><div class="lang-head"><span><i class="dot yellow"></i>JavaScript</span><span>4.2%</span></div><div class="track"><div class="fill" style="width:4.2%;background:#f4df54"></div></div></div>
+      <div class="lang"><div class="lang-head"><span><i class="dot" style="background:#8799b1"></i>Other</span><span>3.2%</span></div><div class="track"><div class="fill" style="width:3.2%;background:#8799b1"></div></div></div>
+    </div>
+    <div class="sidebox"><h3>Top repositories</h3>
+      <div class="toprepo">▣ <a href="#projects">Portfolio-Website</a><span style="margin-left:auto">☆ 5</span></div>
+      <div class="toprepo">▣ <a href="#projects">Student-Management-System</a><span style="margin-left:auto">☆ 4</span></div>
+      <div class="toprepo">▣ <a href="#projects">Bolt-CMS-Bookstore</a><span style="margin-left:auto">☆ 3</span></div>
+      <div class="toprepo">▣ <a href="#projects">Deadlock-Detection-Simulator</a><span style="margin-left:auto">☆ 2</span></div>
+      <div class="toprepo">▣ <a href="#projects">Networking-Notes</a><span style="margin-left:auto">☆ 2</span></div>
+    </div>
+    <div class="sidebox"><div style="color:var(--blue);font-size:24px">“</div><p class="quote">If you want to go fast, go alone. If you want to go far, go together.<small>— Anonymous</small></p></div>
+  </aside>
+</div>
+<footer id="contact">Built with HTML &amp; CSS · Replace placeholder links, email, images and repository details with your real information.</footer>
 <script>
-const graph=document.getElementById('graph');for(let i=0;i<238;i++){const c=document.createElement('div');c.className='cell';graph.appendChild(c)}
+const heatmap = document.querySelector('.heatmap');
+for(let i=0;i<175;i++){const cell=document.createElement('i');heatmap.appendChild(cell);}
 </script>
-</body></html>
+</body>
+</html>
