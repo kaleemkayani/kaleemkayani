@@ -44,7 +44,7 @@
 ## 🤝 Connect
 - GitHub: [@kaleemkayani](https://github.com/kaleemkayani)
 - Portfolio: Replace this with your live portfolio link
-- LinkedIn: Add your LinkedIn link here
+- LinkedIn: https://www.linkedin.com/in/kaleem-kayani-802895345?utm_source=share_via&utm_content=profile&utm_medium=member_android
 
 ---
 <p align="center"><i>Code. Build. Learn. Grow.</i></p>
