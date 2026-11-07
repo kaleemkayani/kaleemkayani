@@ -1,7 +1,7 @@
 <!-- Kaleem Kayani | Professional GitHub Profile -->
 
 <div align="center">
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:07111F,50:123B68,100:22A7F0&height=230&section=header&text=Kaleem%20Kayani&fontSize=62&fontColor=FFFFFF&fontAlignY=38&animation=fadeIn&desc=Computer%20Science%20Student%20%C2%B7%20Aspiring%20Web%20Developer&descSize=17&descAlignY=60&descColor=C6E6FF" alt="Kaleem Kayani banner" />
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:07111F,50:123B68,100:22A7F0&height=230&section=header&text=Kaleem%20Kayani&fontSize=62&fontColor=FFFFFF&fontAlignY=38&animation=fadeIn&desc=Computer%20Science%20Student%20%C2%B7%20%20Web%20Developer&descSize=17&descAlignY=60&descColor=C6E6FF" alt="Kaleem Kayani banner" />
 </div>
 
 <div align="center">
